@@ -1,4 +1,4 @@
-
+const cors=require("cors")
 const express=require("express");
 const JWT=require("jsonwebtoken")
 
@@ -12,7 +12,10 @@ const app=express()
 
 
 
-
+app.use(cors({
+ origin:"*"
+    
+}))
 app.use("/user",userRouter)
 app.use("/notes",notesRouter)
 
