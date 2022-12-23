@@ -3,6 +3,7 @@ const mongoose=require("mongoose")
 let notesSchema=mongoose.Schema({
 note:String,
 name:String,
+title:String,
 userid:String,
 
 },{
